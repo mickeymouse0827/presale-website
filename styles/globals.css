@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.keyword-js {
+  color: #323330;
+  text-decoration: underline 4px #f0db4f;
+}
+
+.keyword-ts {
+  color: #323330;
+  text-decoration: underline 4px #007acc;
+}
+
+.keyword-ts-sm {
+  color: #323330;
+  text-decoration: underline 2px #007acc;
+}
+
+.keyword-next-sm {
+  color: #323330;
+  text-decoration: underline 2px #111;
+}
+
+.keyword-tailwind-sm {
+  color: #323330;
+  text-decoration: underline 2px #06b6d4;
+}
+
+.keyword-react {
+  color: #323330;
+  text-decoration: underline 4px #61dafb;
+}
+
+.keyword-node {
+  color: #323330;
+  text-decoration: underline 4px #43853d;
+}
+
+@layer base {
+  body {
+    @apply dark:bg-gray-900 bg-gray-50 transition duration-200;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply flex flex-col items-center mt-12 mb-4;
+  }
+}
+
+@layer components {
+  .nav-item {
+    @apply text-gray-500 hover:underline hover:text-gray-700 dark:hover:text-gray-200 inline;
+  }
+}
+
+@layer components {
+  .project {
+    @apply flex flex-col justify-between bg-indigo-600  hover:bg-pink-600 transition ease-in-out rounded-md p-4 shadow-md w-auto h-44 lg:h-40;
+  }
+}
+
+@layer components {
+  .project-title {
+    @apply text-lg text-white font-bold mb-2;
+  }
+}
+
+@layer components {
+  .page-title {
+    @apply text-4xl md:text-5xl mb-10 tracking-tight font-extrabold;
+  }
+}
+
+@layer components {
+  .layout {
+    @apply px-6 overflow-hidden;
+  }
+}
+
+@layer components {
+  .header {
+    @apply fixed top-0 py-3 bg-gray-50 dark:bg-gray-900 transition duration-200 border-t-4 dark:border-gray-300 border-gray-800 z-10 shadow-sm;
+  }
+}
